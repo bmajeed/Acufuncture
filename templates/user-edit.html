@@ -1,0 +1,36 @@
+{% extends "_page.html" %}
+
+{% block title %}Edit Profile{% endblock %}
+
+{% block content %}
+<div id="profile-area">
+    <div id="poke-button">
+        <img class="img-round" id="profile-image-edit" src="{{ page.user['image'] }}" alt="Change your profile picture">
+		<div id="poke-overlay">
+			<i class="material-icons">photo_camera</i>
+		</div>
+
+		<form id="profile-image-form" style="display: none;" action="/@{{ page.user['id'] }}/edit" method="POST" enctype="multipart/form-data">
+			<input id="profile-image-input" name="image" type="file" accept="image/*">
+		</form>
+    </div>
+
+	<form action="/@{{ page.user['id'] }}/edit" method="POST" enctype="multipart/form-data" autocomplete="off">
+		<h1>Edit Profile</h1>
+
+		<label for="edit-name"><small>Display Name</small></label><br>
+		<input id="edit-name" style="text-align: center;" name="name" type="text" value="{{ page.user['name'] }}">
+		<br><br>
+
+		<label for="edit-bio"><small>Bio</small></label><br>
+		<textarea id="edit-bio" style="text-align: center;" name="bio" rows="5" cols="50">{{ page.user['bio'] }}</textarea>
+		<br><br>
+
+		<a class="button" href="/@{{ page.user['id'] }}">Cancel</a>
+		<input class="button button-primary" type="submit" value="Save changes">
+	</form>
+</div>
+
+<script type="module" src="/static/js/profile-edit.js"></script>
+
+{% endblock %}

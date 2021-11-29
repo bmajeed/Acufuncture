@@ -1,3 +1,11 @@
+_Copy of web dev group project_
+
+*members:*
+* @fennifith: fennifith James Fenn
+* @bmajeed: Bader Abdulmajeed
+* @jth79 Jason Henriquez
+* @jyenriquez Jacob Enriquez
+
 ## Local Development
 
 You should have [Python 3](https://www.python.org/download/releases/3.0/) and [venv](https://docs.python.org/3/library/venv.html) installed.

@@ -1,0 +1,16 @@
+{% extends "_page.html" %}
+
+{% block content %}
+<div>
+	<h1 style="text-align:center">Notifications</h1>
+
+	<ul id="notifications-list" style="list-style-type: none"></ul>
+
+	<div style="text-align: center">
+		<button id="notifications-show-more" class="button button-primary">Show More</button>
+		<br><br>
+	</div>
+</div>
+
+<script type="module" src="/static/js/notifications.js"></script>
+{% endblock %}

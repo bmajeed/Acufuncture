@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+		<title>{% block title %}Acufuncture | Social Poke Networking{% endblock %}</title>
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap">
+		<link rel="stylesheet" href="/static/style.css">
+		<link disabled id="dark-reader" rel="stylesheet" href="/static/dark.css">
+
+		<script src="https://unpkg.com/chart.js@2.9.4/dist/Chart.min.js" type="text/javascript"></script>
+	</head>
+	<body>
+		{% block bodycontent %}{% endblock %}
+
+		<script type="module" src="/static/js/autocomplete.js"></script>
+		<script type="module" src="/static/js/sidebar.js"></script>
+		<script type="module" src="/static/js/text-radius.js"></script>
+		<script type="module" src="/static/js/dark-mode.js"></script>
+	</body>
+</html>
